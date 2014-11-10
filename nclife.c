@@ -1,3 +1,6 @@
+// TODO: add menus and make the time step persistent across pauses (and less
+// jittery)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -107,6 +110,7 @@ int game(bool **state)
 			}
 		}
 
+		getmaxyx(stdscr, LINES, COLS);
 		draw(state);
 		refresh();
 		nanosleep(&tim, NULL);

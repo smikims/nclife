@@ -1,7 +1,6 @@
-CC	:= gcc
+CC	:= cc
 SRC	:= nclife.c
-LFLAGS  := -lcurses -lm
-CFLAGS	:= -Wall -Wextra -pedantic-errors -std=gnu99 $(LFLAGS)
+CFLAGS	:= -Wall -Wextra -pedantic-errors -ansi -std=gnu11 -lcurses -lm
 DFLAGS	:= -g -pg -O0
 INSTALL	:= /usr/local/bin/nclife
 OUT	:= nclife
